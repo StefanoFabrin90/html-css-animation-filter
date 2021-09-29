@@ -137,10 +137,37 @@
 }
 .ex-10-icon {
     font-size: 60px;
+    animation: spin10 1s linear infinite;
 }
+
+@keyframes spin10 {
+    0% {
+        transform: rotate(1turn);
+    }
+}
+
 .ex-11-icon {
     font-size: 60px;
 }
+
+.ex-11-icon:hover {
+    animation: spin11 3s linear;
+}
+
+@keyframes spin11 {
+    0% {
+        transform: rotate(0);
+    }
+
+    80% {
+        transform: rotate(300deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
